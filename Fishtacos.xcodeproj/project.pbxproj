@@ -14,6 +14,7 @@
 		FA1D4F8E1B89967000A4B48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1D4F8C1B89967000A4B48D /* LaunchScreen.storyboard */; };
 		FA1D4F991B89967000A4B48D /* FishtacosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D4F981B89967000A4B48D /* FishtacosTests.swift */; };
 		FA1D4FA41B89967000A4B48D /* FishtacosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D4FA31B89967000A4B48D /* FishtacosUITests.swift */; };
+		FA1D4FB41B899A6D00A4B48D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1D4FB31B899A6D00A4B48D /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FA1D4F9F1B89967000A4B48D /* FishtacosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishtacosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1D4FA31B89967000A4B48D /* FishtacosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishtacosUITests.swift; sourceTree = "<group>"; };
 		FA1D4FA51B89967000A4B48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1D4FB31B899A6D00A4B48D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1D4FB41B899A6D00A4B48D /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		FA1D4F771B89967000A4B48D = {
 			isa = PBXGroup;
 			children = (
+				FA1D4FB31B899A6D00A4B48D /* GameKit.framework */,
 				FA1D4F821B89967000A4B48D /* Fishtacos */,
 				FA1D4F971B89967000A4B48D /* FishtacosTests */,
 				FA1D4FA21B89967000A4B48D /* FishtacosUITests */,
@@ -192,6 +196,12 @@
 				TargetAttributes = {
 					FA1D4F7F1B89967000A4B48D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = N2YEKRS9JS;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					FA1D4F931B89967000A4B48D = {
 						CreatedOnToolsVersion = 7.0;
@@ -398,10 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Fishtacos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meatfreezer.Fishtacos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Fishtacos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meatfreezer.Fishtacos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
