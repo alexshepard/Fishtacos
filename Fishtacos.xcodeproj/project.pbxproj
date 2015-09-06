@@ -499,6 +499,7 @@
 				FA1D4FAA1B89967000A4B48D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1D4FAB1B89967000A4B48D /* Build configuration list for PBXNativeTarget "FishtacosTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +508,7 @@
 				FA1D4FAD1B89967000A4B48D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1D4FAE1B89967000A4B48D /* Build configuration list for PBXNativeTarget "FishtacosUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +517,7 @@
 				FA1D4FB01B89967000A4B48D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
